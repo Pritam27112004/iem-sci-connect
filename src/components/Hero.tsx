@@ -2,6 +2,7 @@
 import { ArrowRight, Book, School, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import Logo from "@/components/Logo";
 
 const Hero = () => {
   return (
@@ -9,15 +10,18 @@ const Hero = () => {
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-20 left-10 w-20 h-20 bg-iem-primary/5 rounded-full animate-pulse" style={{ animationDuration: '6s' }}></div>
         <div className="absolute bottom-20 right-10 w-32 h-32 bg-iem-accent/5 rounded-full animate-pulse" style={{ animationDuration: '8s' }}></div>
-        <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-iem-secondary/5 rounded-full animate-pulse" style={{ animationDuration: '7s' }}></div>
+        <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-iem-gold/5 rounded-full animate-pulse" style={{ animationDuration: '7s' }}></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="md:flex md:items-center md:justify-between">
           <div className="md:max-w-2xl md:pr-8 animate-fade-in" style={{ animationDuration: '1s' }}>
-            <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-iem-primary via-iem-dark to-iem-primary bg-clip-text">
-              Welcome to Basic Science & Humanities
-            </h1>
+            <div className="flex items-center mb-6">
+              <Logo size="large" className="mr-4" />
+              <h1 className="text-4xl md:text-5xl font-bold gradient-text-iem">
+                Basic Science & Humanities
+              </h1>
+            </div>
             <p className="mt-4 text-xl text-gray-600">
               The foundation of engineering excellence at Institute of Engineering and Management
             </p>
@@ -25,7 +29,7 @@ const Hero = () => {
               Connecting first-year students with faculty resources, monitoring progress, and building academic excellence through collaboration.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button size="lg" className="bg-gradient-to-r from-iem-primary to-iem-dark hover:shadow-lg transition-all duration-300 text-white animate-fade-in" style={{ animationDelay: '0.3s' }} asChild>
+              <Button size="lg" className="bg-gradient-to-r from-iem-primary to-iem-dark hover:shadow-lg transition-all duration-300 text-white animate-fade-in animate-pulse-glow" style={{ animationDelay: '0.3s' }} asChild>
                 <Link to="/faculty" className="group">Meet Our Faculty <ArrowRight size={16} className="ml-2 transform group-hover:translate-x-1 transition-transform" /></Link>
               </Button>
               <Button variant="outline" size="lg" className="border-iem-primary text-iem-primary hover:bg-iem-light hover:shadow-md transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.6s' }} asChild>

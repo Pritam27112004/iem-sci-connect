@@ -64,11 +64,12 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				iem: {
-					primary: '#0A3D62', // Deep blue for IEM main color
-					secondary: '#3498DB', // Lighter blue as secondary color
-					accent: '#F39C12', // Orange accent for highlights
-					light: '#EBF5FB', // Very light blue for backgrounds
-					dark: '#1A5276', // Darker blue for contrast elements
+					primary: '#1B365D', // Deep blue from IEM logo
+					secondary: '#4C7093', // Medium blue as secondary color
+					accent: '#E74C3C', // Red accent for highlights (from logo's red elements)
+					light: '#EBF0F7', // Very light blue for backgrounds
+					dark: '#0F2A4A', // Darker blue for contrast elements
+					gold: '#F4BC46', // Gold/yellow accent (from logo elements)
 				}
 			},
 			borderRadius: {
