@@ -1,5 +1,4 @@
-
-import { ArrowRight, Book, ChalkboardTeacher, Trophy } from "lucide-react";
+import { ArrowRight, Book, Teacher, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -34,7 +33,7 @@ const Hero = () => {
                 <li className="flex">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-10 w-10 rounded-md bg-iem-light text-iem-primary">
-                      <ChalkboardTeacher size={20} />
+                      <Teacher size={20} />
                     </div>
                   </div>
                   <div className="ml-4">
