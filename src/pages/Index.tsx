@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { BookOpen, Award, Users, Calendar } from "lucide-react";
+import { BookOpen, Award, Users, Calendar, Code, Database, Compass, Terminal, PieChart, DollarSign, FileText, Cpu, Zap, Microscope, Briefcase } from "lucide-react";
 
 const Index = () => {
   const subjects = [
@@ -11,6 +11,18 @@ const Index = () => {
     { name: "Physics", icon: <Award className="h-8 w-8 text-iem-primary" /> },
     { name: "Chemistry", icon: <Users className="h-8 w-8 text-iem-primary" /> },
     { name: "English & Communication", icon: <Calendar className="h-8 w-8 text-iem-primary" /> },
+    { name: "Programming for Problem Solving", icon: <Code className="h-8 w-8 text-iem-primary" /> },
+    { name: "Python for Data Science", icon: <Database className="h-8 w-8 text-iem-primary" /> },
+    { name: "Mechanics", icon: <Compass className="h-8 w-8 text-iem-primary" /> },
+    { name: "MATLAB", icon: <Terminal className="h-8 w-8 text-iem-primary" /> },
+    { name: "DTI", icon: <PieChart className="h-8 w-8 text-iem-primary" /> },
+    { name: "Economics", icon: <DollarSign className="h-8 w-8 text-iem-primary" /> },
+    { name: "ESP", icon: <FileText className="h-8 w-8 text-iem-primary" /> },
+    { name: "SDP", icon: <FileText className="h-8 w-8 text-iem-primary" /> },
+    { name: "Electronics", icon: <Cpu className="h-8 w-8 text-iem-primary" /> },
+    { name: "Electrical", icon: <Zap className="h-8 w-8 text-iem-primary" /> },
+    { name: "Biology", icon: <Microscope className="h-8 w-8 text-iem-primary" /> },
+    { name: "Entrepreneurship", icon: <Briefcase className="h-8 w-8 text-iem-primary" /> },
   ];
 
   return (
@@ -30,7 +42,7 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
               {subjects.map((subject, index) => (
                 <Card key={index} className="border-t-4 border-t-iem-primary transition-all hover:shadow-lg">
                   <CardContent className="pt-6 text-center">
