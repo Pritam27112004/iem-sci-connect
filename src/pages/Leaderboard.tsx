@@ -136,13 +136,13 @@ const getProgressColor = (rate: number) => {
 
 const Leaderboard = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [branchFilter, setBranchFilter] = useState("");
+  const [branchFilter, setBranchFilter] = useState("all");
   
   // Filter students based on search and branch
   const filteredStudents = studentData.filter(student => {
     const matchesSearch = student.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
                          student.roll.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesBranch = branchFilter ? student.branch === branchFilter : true;
+    const matchesBranch = branchFilter === "all" ? true : student.branch === branchFilter;
     
     return matchesSearch && matchesBranch;
   });
@@ -205,7 +205,7 @@ const Leaderboard = () => {
                   <SelectValue placeholder="Filter by branch" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">All Branches</SelectItem>
+                  <SelectItem value="all">All Branches</SelectItem>
                   {branches.map((branch, index) => (
                     <SelectItem key={index} value={branch}>{branch}</SelectItem>
                   ))}
