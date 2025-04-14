@@ -11,6 +11,9 @@ import Leaderboard from "./pages/Leaderboard";
 import About from "./pages/About";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Syllabus from "./pages/Syllabus";
+import Routine from "./pages/Routine";
+import Calendar from "./pages/Calendar";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +30,9 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/syllabus" element={<Syllabus />} />
+          <Route path="/routine" element={<Routine />} />
+          <Route path="/calendar" element={<Calendar />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
